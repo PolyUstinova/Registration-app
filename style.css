@@ -1,0 +1,162 @@
+.display{
+    display: none;
+}
+
+#wrapper {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#log_out_btn, .header, #view_log, #view_registration, .back, #log_out_btn, .back_log {
+    text-decoration: none;
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.head_block {
+    margin-bottom: 10px;
+}
+
+#view_log, #view_registration {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#log_out_btn, .header {
+    font-size: 20px;
+}
+
+.form, #reg_or_log {
+    margin-left: 20px;
+}
+
+#log_out_btn {
+    font-weight: 700;
+}
+
+#view_log, #info {
+    margin-right: 20px;
+}
+
+.label, #log_input, #pass_input, #log_btn, #cancel, #content, #repeat_pass_input, #reg_btn, #log_reg_input, #pass_reg_input, #log_reset_input, #new_pass_reset_input, #repeat_pass_reset_input, #reset_btn, #forgot_password, .back_btn {
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+#log_input, #pass_input, #repeat_pass_input, #log_reg_input, #pass_reg_input, #log_reset_input, #new_pass_reset_input, #repeat_pass_reset_input {
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+#forgot_password, .back_btn {
+    font-weight: 600;
+}
+
+#forgot_password {
+    color: #6d6d6d;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+#log_btn {
+    margin-bottom: 10px;
+}
+
+.back, #log_out_btn, .back_log {
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+.head_block {
+    display: flex;
+    align-items: center;
+}
+
+.back, .back_log {
+    margin-left: 100px;
+}
+
+#p_content {
+    width: 250px;
+    text-align: justify;
+}
+
+#img_content {
+    width: 300px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.slider {
+    width: 800px;
+    height: 500px;
+    overflow: hidden;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.navigation {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.bar {
+    width: 30px;
+    height: 8px;
+    margin: 6px;
+    cursor: pointer;
+    background-color: #000;
+    opacity: .5;
+    border-radius: 2px;
+    transition: all 0.4s ease;
+}
+
+.bar:hover {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.slides input {
+    position: absolute;
+    visibility: hidden;
+}
+
+.slides {
+    width: 400%;
+    height: 100%;
+    display: flex;
+}
+
+img {
+    width: 100%;
+    height: 100%;   
+}
+
+.slide {
+    width: 25%;
+    transition: all 0.6s ease;
+}
+
+#r1:checked ~ .sl1 {
+    margin-left: 0;
+}
+
+#r2:checked ~ .sl1 {
+    margin-left: -25%;
+}
+
+#r3:checked ~ .sl1 {
+    margin-left: -50%;
+}
+
